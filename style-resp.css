@@ -1,0 +1,469 @@
+/* Responsivo do menu */
+@media (max-width: 890px) {
+
+    .navigation {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 100px;
+        right: 0px;
+        z-index: 1000;
+        background-color: #b3695e00;
+        transition: .6s;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #mn.active .navigation {
+        height: 100vh;
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    .navigation a {
+        display: block;
+        font-size: 0.8em;
+        color: #fff;
+        width: 20%;
+        font-weight: 800;
+        text-decoration: none;
+        margin-left: 10px;
+        padding: 2px 10px;
+        transition: .5s;
+    }
+
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+
+    #hamburger {
+        width: 20px;
+        border-top: 2px solid;
+    }
+
+    #hamburger::after,
+    #hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+
+    #mn.active #hamburger {
+        border-top-color: transparent;
+    }
+
+    #mn.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    #mn.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}
+
+/* Responsivo do logo */
+@media (max-width: 600px) {
+    .logos {
+        margin-left: -50px;
+    }
+
+    .logo-html {
+        height: 20px;
+    }
+
+    .logo-js {
+        height: 25px;
+        margin-left: -20px;
+    }
+
+    .logo-css {
+        height: 20px;
+        margin-left: -20px;
+    }
+}
+
+@media (max-width: 890px) {
+    .max {
+        height: 30px;
+    }
+}
+
+/*Início Responsivo*/
+@media (min-width: 690px) and (max-width: 800px) {
+    .fundo-centralizado {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #inicio {
+        height: 100vh;
+        width: 100vw;
+        margin-left: -10px;
+        margin-top: -150px;
+    }
+
+    #inicio .apresentacao {
+        display: inline-block;
+        position: relative;
+        width: 100px;
+    }
+
+    #inicio .link-linkedin {
+        margin-top: 25px;
+    }
+
+    #inicio .ola-deborah {
+        width: 300px;
+        height: 380px;
+        margin-top: 180px;
+        margin-left: 160px;
+    }
+
+    #inicio .block-img {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .block-img::after {
+        position: relative;
+    }
+}
+
+@media (min-width: 520px) and (max-width: 689px) {
+    .fundo-centralizado {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #inicio {
+        height: 100vh;
+        width: 100vw;
+        margin-left: 10px;
+        margin-top: -120px;
+    }
+
+    #inicio .apresentacao {
+        display: inline-block;
+        position: relative;
+        width: 160px;
+    }
+
+    h3,
+    h1 {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 18px;
+    }
+
+    #inicio .nome {
+        color: #000;
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    #inicio .link-linkedin {
+        margin-top: 60px;
+        padding: 20px 25px;
+    }
+
+    #inicio .ola-deborah {
+        width: 250px;
+        height: 350px;
+        margin-top: 150px;
+        margin-left: 50px;
+    }
+
+
+    #inicio .block-img {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .block-img::after {
+        position: relative;
+    }
+
+}
+
+@media (min-width: 400px) and (max-width: 519px) {
+    .fundo-centralizado {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #inicio {
+        height: 100vh;
+        width: 100vw;
+        margin-left: 50px;
+        margin-top: -100px;
+    }
+
+    #inicio .apresentacao {
+        display: inline-block;
+        position: relative;
+        width: 120px;
+    }
+
+    h3,
+    h1 {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 17px;
+    }
+
+    #inicio .nome {
+        color: #000;
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    #inicio .link-linkedin {
+        margin-top: 80px;
+        margin: 60px 0;
+        padding: 15px 20px;
+    }
+
+    #inicio .ola-deborah {
+        width: 200px;
+        height: 300px;
+        margin-top: 180px;
+        margin-left: 80px;
+    }
+
+    #inicio .block-img {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .block-img::after {
+        position: relative;
+    }
+}
+
+/* Sobre mim Responsivo*/
+@media (min-width: 940px) and (max-width: 1100px) {
+    #sobre-mim {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        margin-left: 20px;
+    }
+
+    #sobre-mim .sobre {
+        display: inline-block;
+        position: relative;
+        top: 10px;
+        margin-left: -40px;
+    }
+
+    #sobre-mim .titulo {
+        font-size: 30px;
+        font-weight: 800;
+        font-family: 'Open sans', sans-serif;
+    }
+
+    #sobre-mim .sobre-mim-1 {
+        display: block;
+        width: 600px;
+        font-size: 15px;
+    }
+
+
+    #sobre-mim .imagem-deborah {
+        height: 450px;
+        margin-left: 60px;
+        margin-top: 140px;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 939px) {
+    #sobre-mim {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        margin-left: 20px;
+    }
+
+    #sobre-mim .sobre {
+        display: inline-block;
+        position: relative;
+        top: 10px;
+        margin-left: -50px;
+    }
+
+    #sobre-mim .titulo {
+        font-size: 30px;
+        font-weight: 800;
+        font-family: 'Open sans', sans-serif;
+    }
+
+    #sobre-mim .sobre-mim-1 {
+        display: block;
+        width: 500px;
+        font-size: 15px;
+    }
+
+
+    #sobre-mim .imagem-deborah {
+        height: 420px;
+        margin-left: 60px;
+        margin-top: 160px;
+    }
+
+
+}
+
+@media (min-width: 670px) and (max-width: 799px) {
+    #sobre-mim {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        margin-left: 20px;
+    }
+
+    #sobre-mim .sobre {
+        display: inline-block;
+        position: relative;
+        top: 80px;
+        margin-left: -50px;
+    }
+
+    #sobre-mim .titulo {
+        font-size: 25px;
+        font-weight: 800;
+        font-family: 'Open sans', sans-serif;
+    }
+
+    #sobre-mim .sobre-mim-1 {
+        display: block;
+        width: 420px;
+        font-size: 13px;
+    }
+
+
+    #sobre-mim .imagem-deborah {
+        height: 420px;
+        margin-left: 20px;
+        margin-top: 240px;
+    }
+}
+
+@media (min-width: 560px) and (max-width: 669px) {
+    #sobre-mim {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        margin-left: 20px;
+    }
+
+    #sobre-mim .sobre {
+        display: inline-block;
+        position: relative;
+        top: 80px;
+        margin-left: -80px;
+    }
+
+    #sobre-mim .titulo {
+        font-size: 20px;
+        font-weight: 800;
+        font-family: 'Open sans', sans-serif;
+    }
+
+    #sobre-mim .sobre-mim-1 {
+        display: block;
+        width: 360px;
+        font-size: 14px;
+    }
+
+
+    #sobre-mim .imagem-deborah {
+        height: 460px;
+        margin-left: -10px;
+        margin-top: 200px;
+    }
+}
+
+@media (min-width: 510px) and (max-width: 559px) {
+    #sobre-mim {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        margin-left: 20px;
+    }
+
+    #sobre-mim .sobre {
+        display: inline-block;
+        position: relative;
+        top: 40px;
+        margin-left: -90px;
+    }
+
+    #sobre-mim .titulo {
+        font-size: 20px;
+        font-weight: 800;
+        font-family: 'Open sans', sans-serif;
+    }
+
+    #sobre-mim .sobre-mim-1 {
+        display: block;
+        width: 300px;
+        font-size: 12px;
+    }
+
+
+    #sobre-mim .imagem-deborah {
+        height: 460px;
+        margin-left: 10px;
+        margin-top: 200px;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 509px) {
+    #sobre-mim {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        margin-left: 20px;
+    }
+
+    #sobre-mim .sobre {
+        display: inline-block;
+        position: relative;
+        top: 60px;
+        margin-left: -40px;
+    }
+
+    #sobre-mim .titulo {
+        font-size: 20px;
+        font-weight: 800;
+        font-family: 'Open sans', sans-serif;
+    }
+
+    #sobre-mim .sobre-mim-1 {
+        display: block;
+        width: 250px;
+        font-size: 11px;
+    }
+
+
+    #sobre-mim .imagem-deborah {
+        height: 460px;
+        width: 140px;
+        margin-left: 20px;
+        margin-top: 200px;
+    }
+}
